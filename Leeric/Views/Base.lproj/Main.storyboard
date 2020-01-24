@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Leeric" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="RWF-NR-OIy">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-Km-u6u">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7x-9q-Mex" userLabel="Title View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="183.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I forgot the lyrics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-4o-BVc">
+                                                <rect key="frame" x="42.666666666666657" y="71.333333333333329" width="289.66666666666674" height="40.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="33"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DK1-4o-BVc" firstAttribute="centerX" secondItem="b7x-9q-Mex" secondAttribute="centerX" id="J3u-sH-fxt"/>
+                                            <constraint firstItem="DK1-4o-BVc" firstAttribute="centerY" secondItem="b7x-9q-Mex" secondAttribute="centerY" id="h5c-Y7-RKV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfa-Li-j0w" userLabel="Prompt View">
+                                        <rect key="frame" x="0.0" y="183.66666666666663" width="375" height="183.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter an artist and their song name below." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKf-qo-YZB">
+                                                <rect key="frame" x="15.333333333333343" y="81.666666666666657" width="344.33333333333326" height="19.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cKf-qo-YZB" firstAttribute="centerX" secondItem="gfa-Li-j0w" secondAttribute="centerX" id="3rS-mf-7Ae"/>
+                                            <constraint firstItem="cKf-qo-YZB" firstAttribute="centerY" secondItem="gfa-Li-j0w" secondAttribute="centerY" id="Jel-lf-oqz"/>
+                                            <constraint firstItem="cKf-qo-YZB" firstAttribute="centerY" secondItem="gfa-Li-j0w" secondAttribute="centerY" id="M0b-Oj-hmz"/>
+                                            <constraint firstItem="cKf-qo-YZB" firstAttribute="centerX" secondItem="gfa-Li-j0w" secondAttribute="centerX" id="cQt-5y-3kA"/>
+                                            <constraint firstItem="cKf-qo-YZB" firstAttribute="centerY" secondItem="gfa-Li-j0w" secondAttribute="centerY" id="hB5-IG-GTR"/>
+                                            <constraint firstItem="cKf-qo-YZB" firstAttribute="centerX" secondItem="gfa-Li-j0w" secondAttribute="centerX" id="nS0-s4-lXW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMH-38-vZ6" userLabel="Input View">
+                                        <rect key="frame" x="0.0" y="367" width="375" height="183.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Nz-6z-1Fx" userLabel="input">
+                                                <rect key="frame" x="127.33333333333334" y="55.333333333333314" width="120.33333333333334" height="73"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" textAlignment="natural" minimumFontSize="20" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0nT-PI-dnh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Title" textAlignment="natural" minimumFontSize="20" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="6NI-bk-yVw">
+                                                        <rect key="frame" x="0.0" y="39" width="120.33333333333333" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3Nz-6z-1Fx" firstAttribute="centerY" secondItem="UMH-38-vZ6" secondAttribute="centerY" id="Bfq-kR-hdt"/>
+                                            <constraint firstItem="3Nz-6z-1Fx" firstAttribute="centerX" secondItem="UMH-38-vZ6" secondAttribute="centerX" id="lUq-eB-Nka"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-bg-yfz" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="550.66666666666663" width="375" height="183.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-Db-VW2" userLabel="button">
+                                                <rect key="frame" x="102.66666666666669" y="71.666666666666742" width="170" height="40"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="b8A-PR-PzB"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="sb1-3N-bHf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="tintColor" red="0.73318392040000002" green="0.99221044780000001" blue="0.90577054020000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Search Lyrics" image="music.note" catalog="system">
+                                                    <color key="titleShadowColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="du0-tP-ps9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0V2-Db-VW2" firstAttribute="centerY" secondItem="DXy-bg-yfz" secondAttribute="centerY" id="Sdj-Bg-map"/>
+                                            <constraint firstItem="0V2-Db-VW2" firstAttribute="centerX" secondItem="DXy-bg-yfz" secondAttribute="centerX" id="wF2-0K-seo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RWF-NR-OIy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1sp-1l-qgs"/>
+                            <constraint firstItem="fvb-Km-u6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hkg-Nj-mzT"/>
+                            <constraint firstItem="RWF-NR-OIy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="OIJ-BR-luy"/>
+                            <constraint firstAttribute="top" secondItem="RWF-NR-OIy" secondAttribute="top" constant="20" symbolic="YES" id="R2b-lU-ZQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fvb-Km-u6u" secondAttribute="bottom" id="e7i-Ok-4i6"/>
+                            <constraint firstItem="RWF-NR-OIy" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="20" symbolic="YES" id="mfA-ED-sFe"/>
+                            <constraint firstItem="fvb-Km-u6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wLE-WJ-R3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fvb-Km-u6u" secondAttribute="trailing" id="zhx-n7-eA5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistField" destination="0nT-PI-dnh" id="qwD-So-sjB"/>
+                        <outlet property="songField" destination="6NI-bk-yVw" id="2SI-ib-ovz"/>
+                        <segue destination="qBA-Nq-IQQ" kind="presentation" identifier="ShowLyrics" id="xeS-Y5-Zov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-50.246305418719217"/>
+        </scene>
+        <!--Lyric View Controller-->
+        <scene sceneID="nhY-R2-XD3">
+            <objects>
+                <viewController id="qBA-Nq-IQQ" customClass="LyricViewController" customModule="Leeric" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pm1-HH-rob">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPL-V4-6oU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zl6-9V-qTC">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="922.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSd-Yi-WOm">
+                                                <rect key="frame" x="20" y="10" width="335" height="872.66666666666663"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iSd-Yi-WOm" secondAttribute="trailing" constant="20" id="CwA-v6-Yss"/>
+                                            <constraint firstAttribute="bottom" secondItem="iSd-Yi-WOm" secondAttribute="bottom" constant="40" id="K8m-cv-XXp"/>
+                                            <constraint firstItem="iSd-Yi-WOm" firstAttribute="top" secondItem="Zl6-9V-qTC" secondAttribute="top" constant="10" id="d9v-j3-Eex"/>
+                                            <constraint firstItem="iSd-Yi-WOm" firstAttribute="leading" secondItem="Zl6-9V-qTC" secondAttribute="leading" constant="20" id="wa0-3N-dLm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zl6-9V-qTC" secondAttribute="trailing" id="BS4-P7-6e0"/>
+                                    <constraint firstItem="Zl6-9V-qTC" firstAttribute="width" secondItem="PPL-V4-6oU" secondAttribute="width" id="NXk-4B-rJa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zl6-9V-qTC" secondAttribute="bottom" constant="40" id="RtL-X3-zEl"/>
+                                    <constraint firstItem="Zl6-9V-qTC" firstAttribute="top" secondItem="PPL-V4-6oU" secondAttribute="top" constant="20" id="hoT-xR-X4b"/>
+                                    <constraint firstItem="Zl6-9V-qTC" firstAttribute="leading" secondItem="PPL-V4-6oU" secondAttribute="leading" id="nNv-Iv-2yv"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="i3x-xv-jhN"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ds9-yi-cop"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PPL-V4-6oU" firstAttribute="trailing" secondItem="wKd-TU-B0v" secondAttribute="trailing" id="6Eb-wr-dAK"/>
+                            <constraint firstItem="PPL-V4-6oU" firstAttribute="bottom" secondItem="wKd-TU-B0v" secondAttribute="bottom" id="7dh-BR-PaP"/>
+                            <constraint firstItem="PPL-V4-6oU" firstAttribute="leading" secondItem="wKd-TU-B0v" secondAttribute="leading" id="Xx7-Lp-LWu"/>
+                            <constraint firstItem="PPL-V4-6oU" firstAttribute="top" secondItem="wKd-TU-B0v" secondAttribute="top" id="f4y-S6-nUE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wKd-TU-B0v"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yn-bJ-nxI"/>
+                    <connections>
+                        <outlet property="lyricLabel" destination="iSd-Yi-WOm" id="NVn-cd-Ivv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaT-8P-C1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.79999999999995" y="-52.463054187192121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="green" width="640" height="1136"/>
+        <image name="music.note" catalog="system" width="48" height="64"/>
+    </resources>
+</document>
